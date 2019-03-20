@@ -1,2 +1,7 @@
 /pdf/
 /master\ thesis
+*.blg
+*.gz
+*.log
+*.bbl
+*.aux
