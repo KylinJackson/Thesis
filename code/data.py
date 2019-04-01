@@ -5,7 +5,6 @@ import pandas as pd
 
 class TrainSet(Dataset):
     def __init__(self, data):
-        # 定义好 image 的路径
         self.data, self.label = data[:, :-1].float(), data[:, -1].float()
 
     def __getitem__(self, index):
