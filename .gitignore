@@ -5,3 +5,5 @@
 *.log
 *.bbl
 *.aux
+/code/venv/
+/code/.idea/
