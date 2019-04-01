@@ -888,4 +888,47 @@
   file        = {:/home/kylin/Workspace/Thesis/pdf/Learning internal representations by error propagation.pdf:PDF},
 }
 
+@Article{Kingma2014,
+  author  = {Kingma, Diederik P and Ba, Jimmy},
+  title   = {Adam: A method for stochastic optimization},
+  journal = {arXiv preprint arXiv:1412.6980},
+  year    = {2014},
+  file    = {:/home/kylin/Workspace/Thesis/pdf/Adam\: A method for stochastic optimization.pdf:PDF},
+}
+
+@InProceedings{Reddi2018,
+  author    = {Sashank J. Reddi and Satyen Kale and Sanjiv Kumar},
+  title     = {On the Convergence of Adam and Beyond},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2018},
+  file      = {:/home/kylin/Workspace/Thesis/pdf/On the Convergence of Adam and Beyond.pdf:PDF},
+  url       = {https://openreview.net/forum?id=ryQu7f-RZ},
+}
+
+@InProceedings{coates2011analysis,
+  author    = {Coates, Adam and Ng, Andrew and Lee, Honglak},
+  title     = {An analysis of single-layer networks in unsupervised feature learning},
+  booktitle = {Proceedings of the fourteenth international conference on artificial intelligence and statistics},
+  year      = {2011},
+  pages     = {215--223},
+  file      = {:/home/kylin/Workspace/Thesis/pdf/An Analysis of Single-Layer Networks in Unsupervised Feature Learning.pdf:PDF},
+}
+
+@Article{White1988,
+  author    = {White, Halbert},
+  title     = {Economic prediction using neural networks: The case of IBM daily stock returns},
+  year      = {1988},
+  file      = {:/home/kylin/Workspace/Thesis/pdf/Economic prediction using neural networks\: The case of IBM daily stock returns.pdf:PDF},
+  publisher = {Department of Economics, University of California},
+}
+
+@InProceedings{Ribeiro2011,
+  author       = {Ribeiro, Bernardete and Lopes, Noel},
+  title        = {Deep belief networks for financial prediction},
+  booktitle    = {International Conference on Neural Information Processing},
+  year         = {2011},
+  pages        = {766--773},
+  organization = {Springer},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
