@@ -37,9 +37,9 @@ df_tensor = torch.Tensor(df_numpy)
 trainset = TrainSet(df_tensor)
 trainloader = DataLoader(trainset, batch_size=10, shuffle=True)
 
-# rnn = torch.load('rnn.pkl')
+rnn = torch.load('rnn.pkl')
 
-rnn = RNN(n)
+# rnn = RNN(n)
 optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)  # optimize all cnn parameters
 loss_func = nn.MSELoss()
 
@@ -77,5 +77,6 @@ fig1.show()
 fig2 = Plot(2)
 fig2.plot(df_index[train_end:-400], df_all[train_end:-400], label='real-data')
 fig2.plot(df_index[train_end:-400], generate_data_test[:-400], label='generate_test')
+fig2.title('上证指数（指数代码：000001）')
 fig2.save()
 fig2.show()
