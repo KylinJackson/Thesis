@@ -1,29 +1,35 @@
+import numpy as np
 import torch
 import torch.nn as nn
-import numpy as np
-
-from data import TrainSet, Action
-from network import RNN
+import torch.optim as optim
 from torch.utils.data import DataLoader
+
+from data import *
+from network import LSTM
 from plot import Plot
 
-n = 30
+AFFECT = 30
+HIDDEN_SIZE = 64
+NUM_LAYERS = 1
 LR = 0.0001
-EPOCH = 0
-train_end = -500
-# 数据集建立
+EPOCH = 200
+TRAIN_END = -500
+FILENAME = 'data/data_train.csv'
+COLUMN = 'HiPr'
+INDEX_COL = 'TrdDt'
 
 r'''
 df：训练使用
 df_all：所有数据
 df_index：标签
 '''
-
-df, df_all, df_index = Action.read_data('high', n=n, train_end=train_end)
-
-df_all = np.array(df_all.tolist())
-fig1 = Plot(1)
-fig1.plot(df_index, df_all, label='real-data')
+df, df_all, df_index = Action.generate_df(
+    FILENAME,
+    COLUMN,
+    INDEX_COL,
+    AFFECT,
+    TRAIN_END
+)
 
 df_numpy = np.array(df)
 
@@ -34,49 +40,53 @@ df_numpy_std = np.std(df_numpy)
 df_numpy = (df_numpy - df_numpy_mean) / df_numpy_std
 df_tensor = torch.Tensor(df_numpy)
 
-trainset = TrainSet(df_tensor)
-trainloader = DataLoader(trainset, batch_size=10, shuffle=True)
+train_set = TrainSet(df_tensor)
+train_loader = DataLoader(train_set, batch_size=10, shuffle=True)
 
-rnn = torch.load('rnn.pkl')
+# lstm = torch.load('save/lstm.pt')
 
-# rnn = RNN(n)
-optimizer = torch.optim.Adam(rnn.parameters(), lr=LR)  # optimize all cnn parameters
+lstm = LSTM(AFFECT, HIDDEN_SIZE, NUM_LAYERS)
+optimizer = optim.Adam(lstm.parameters(), lr=LR)
 loss_func = nn.MSELoss()
 
 for step in range(EPOCH):
-    for tx, ty in trainloader:
-        output = rnn(torch.unsqueeze(tx, dim=0))
+    loss = None
+    for tx, ty in train_loader:
+        output = lstm(torch.unsqueeze(tx, dim=0))
         loss = loss_func(torch.squeeze(output), ty)
         optimizer.zero_grad()  # clear gradients for this training step
         loss.backward()  # back propagation, compute gradients
         optimizer.step()
     print(step, loss)
     if step % 10:
-        torch.save(rnn, 'rnn.pkl')
-torch.save(rnn, 'rnn.pkl')
+        torch.save(lstm, 'save/lstm.pt')
+torch.save(lstm, 'save/lstm.pt')
 
 generate_data_train = []
 generate_data_test = []
 
-test_index = len(df_all) + train_end
+test_index = len(df_all) + TRAIN_END
 
 df_all_normal = (df_all - df_numpy_mean) / df_numpy_std
 df_all_normal_tensor = torch.Tensor(df_all_normal)
-for i in range(n, len(df_all)):
-    x = df_all_normal_tensor[i - n:i]
+for i in range(AFFECT, len(df_all)):
+    x = df_all_normal_tensor[i - AFFECT:i]
     x = torch.unsqueeze(torch.unsqueeze(x, dim=0), dim=0)
-    y = rnn(x)
+    y = lstm(x)
     if i < test_index:
         generate_data_train.append(torch.squeeze(y).detach().numpy() * df_numpy_std + df_numpy_mean)
     else:
         generate_data_test.append(torch.squeeze(y).detach().numpy() * df_numpy_std + df_numpy_mean)
-fig1.plot(df_index[n:train_end], generate_data_train, label='generate_train')
-fig1.plot(df_index[train_end:], generate_data_test, label='generate_test')
-fig1.save()
-fig1.show()
-fig2 = Plot(2)
-fig2.plot(df_index[train_end:-400], df_all[train_end:-400], label='real-data')
-fig2.plot(df_index[train_end:-400], generate_data_test[:-400], label='generate_test')
-fig2.title('上证指数（指数代码：000001）')
-fig2.save()
-fig2.show()
+
+plt1 = Plot(1)
+plt2 = Plot(2)
+plt1.plot(df_index, df_all, 'real_data')
+plt1.plot(df_index[AFFECT:TRAIN_END], generate_data_train, 'generate_train')
+plt1.plot(df_index[TRAIN_END:], generate_data_test, 'generate_test')
+plt1.save()
+plt1.show()
+plt2.title('上证指数', zh=True)
+plt2.plot(df_index[TRAIN_END:-400], df_all[TRAIN_END:-400], 'real-data')
+plt2.plot(df_index[TRAIN_END:-400], generate_data_test[:-400], 'generate_test')
+plt2.save()
+plt2.show()
