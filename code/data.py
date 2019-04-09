@@ -18,7 +18,7 @@ class TrainSet(Dataset):
 class Action:
     @staticmethod
     def generate_df(filename, column, index_col, affect, train_end):
-        df = pd.read_csv(filename, index_col=index_col)
+        df = pd.read_csv('data/{}'.format(filename), index_col=index_col)
         df.index = list(
             map(
                 lambda x: datetime.datetime.strptime(x, '%Y-%m-%d'),

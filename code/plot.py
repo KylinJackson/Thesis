@@ -16,9 +16,9 @@ class Plot:
         plt.figure(self.index)
         plt.show()
 
-    def save(self):
+    def save(self, filename):
         plt.figure(self.index)
-        plt.savefig('fig/fig{}.png'.format(self.index))
+        plt.savefig('fig/{}.png'.format(filename))
 
     def title(self, title, zh=False):
         plt.figure(self.index)

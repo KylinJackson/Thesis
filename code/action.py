@@ -12,9 +12,9 @@ AFFECT = 30
 HIDDEN_SIZE = 64
 NUM_LAYERS = 1
 LR = 0.0001
-EPOCH = 200
+EPOCH = 100
 TRAIN_END = -500
-FILENAME = 'data/data_train.csv'
+FILENAME = 'data_train.csv'
 COLUMN = 'HiPr'
 INDEX_COL = 'TrdDt'
 
@@ -83,10 +83,10 @@ plt2 = Plot(2)
 plt1.plot(df_index, df_all, 'real_data')
 plt1.plot(df_index[AFFECT:TRAIN_END], generate_data_train, 'generate_train')
 plt1.plot(df_index[TRAIN_END:], generate_data_test, 'generate_test')
-plt1.save()
+plt1.save('fig1')
 plt1.show()
 plt2.title('上证指数', zh=True)
 plt2.plot(df_index[TRAIN_END:-400], df_all[TRAIN_END:-400], 'real-data')
 plt2.plot(df_index[TRAIN_END:-400], generate_data_test[:-400], 'generate_test')
-plt2.save()
+plt2.save('fig2')
 plt2.show()
