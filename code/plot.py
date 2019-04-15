@@ -7,9 +7,12 @@ class Plot:
         self.index = index
         self.zh_font = fm.FontProperties(fname='font/simhei.ttf')
 
-    def plot(self, data_index, data, label):
+    def plot(self, data_index, data, label=None):
         plt.figure(self.index)
-        plt.plot(data_index, data, label=label)
+        if label is None:
+            plt.plot(data_index, data)
+        else:
+            plt.plot(data_index, data, label=label)
         plt.legend()
 
     def show(self):
