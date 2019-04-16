@@ -1,3 +1,5 @@
+import time
+
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
@@ -15,13 +17,12 @@ class Plot:
             plt.plot(data_index, data, label=label)
         plt.legend()
 
-    def show(self):
-        plt.figure(self.index)
-        plt.show()
-
     def save(self, filename):
         plt.figure(self.index)
-        plt.savefig('fig/{}.png'.format(filename))
+        plt.savefig('fig/{}-{}.png'
+                    .format(filename,
+                            time.strftime('%Y-%m-%d %H:%M:%S',
+                                          time.localtime())))
 
     def title(self, title, zh=False):
         plt.figure(self.index)
@@ -29,3 +30,7 @@ class Plot:
             plt.title(title, fontproperties=self.zh_font)
         else:
             plt.title(title)
+
+    @staticmethod
+    def show():
+        plt.show()
