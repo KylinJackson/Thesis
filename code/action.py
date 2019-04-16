@@ -5,12 +5,14 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 
 from data import *
-from plot import Plot
+from evaluate import *
 from network import LSTM
+from plot import Plot
 
 network_name = 'LSTM'
 TRAIN = False
 SHOW = False
+SAVE_PLOT = False
 AFFECT = 30
 HIDDEN_SIZE = 64
 NUM_LAYERS = 1
@@ -86,18 +88,30 @@ plt1 = Plot(1)
 plt1.plot(df_index, df_all, 'real_data')
 plt1.plot(df_index[AFFECT:TRAIN_END], generate_data_train, 'generate_train')
 plt1.plot(df_index[TRAIN_END:], generate_data_test, 'generate_test')
-plt1.save('fig1')
 
 plt2 = Plot(2)
 plt2.title('上证指数', zh=True)
 plt2.plot(df_index[TRAIN_END:-400], df_all[TRAIN_END:-400], 'real-data')
 plt2.plot(df_index[TRAIN_END:-400], generate_data_test[:-400], 'generate_test')
-plt2.save('fig2')
 
 plt3 = Plot(3)
 plt3.plot(df_index[TRAIN_END:], df_all[TRAIN_END:], 'real-data')
 plt3.plot(df_index[TRAIN_END:], generate_data_test, 'generate_test')
-plt3.save('fig3')
 
 if SHOW:
     Plot.show()
+if SAVE_PLOT:
+    plt1.save('fig1-{}'.format(network_name))
+    plt2.save('fig2-{}'.format(network_name))
+    plt3.save('fig3-{}'.format(network_name))
+
+f_out = open('save/evaluate.txt', 'w')
+evaluator = Evaluate(df_all[TRAIN_END:], generate_data_test)
+
+print('L1Loss: {},\nMSELoss: {},\nTheil: {},\nDA: {}'.format(
+    evaluator.L1Loss(),
+    evaluator.MSELoss(),
+    evaluator.Theil(),
+    evaluator.DA()),
+    file=f_out)
+f_out.close()
