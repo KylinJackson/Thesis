@@ -5,11 +5,12 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 
 from data import *
-from network import LSTM
 from plot import Plot
+from network import LSTM
 
+network_name = 'LSTM'
 TRAIN = False
-SHOW = True
+SHOW = False
 AFFECT = 30
 HIDDEN_SIZE = 64
 NUM_LAYERS = 1
@@ -59,10 +60,10 @@ if TRAIN:
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-        print('step: {}, loss: {}'.format(step+1,loss.detach()))
-    torch.save(lstm, 'save/lstm.pt')
+        print('step: {}, loss: {}'.format(step + 1, loss.detach()))
+    torch.save(lstm, 'save/{}.pt'.format(network_name))
 else:
-    lstm = torch.load('save/lstm.pt')
+    lstm = torch.load('save/{}.pt'.format(network_name))
 
 generate_data_train = list()
 generate_data_test = list()
