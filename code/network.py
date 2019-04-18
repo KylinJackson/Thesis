@@ -3,7 +3,7 @@ import torch.nn as nn
 
 class LSTM(nn.Module):
     def __init__(self, input_size, hidden_size, num_layers):
-        super(LSTM, self).__init__()
+        super().__init__()
         self.lstm = nn.LSTM(
             input_size=input_size,
             hidden_size=hidden_size,
@@ -15,6 +15,11 @@ class LSTM(nn.Module):
         )
 
     def forward(self, x):
-        r_out, (hn, cn) = self.lstm(x, None)
+        r_out, _ = self.lstm(x, None)
         out = self.out(r_out)
         return out
+
+
+if __name__ == '__main__':
+    lstm = LSTM(30, 64, 2)
+    print(lstm)
