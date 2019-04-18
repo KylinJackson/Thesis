@@ -1,3 +1,5 @@
+import time
+
 import numpy as np
 import torch
 import torch.nn as nn
@@ -9,10 +11,11 @@ from evaluate import *
 from network import LSTM
 from plot import Plot
 
+T = time.localtime()
 network_name = 'LSTM'
 TRAIN = False
 SHOW = False
-SAVE_PLOT = False
+SAVE_PLOT = True
 AFFECT = 30
 HIDDEN_SIZE = 64
 NUM_LAYERS = 1
@@ -84,17 +87,17 @@ for i in range(AFFECT, len(df_all)):
     else:
         generate_data_test.append(y.numpy() * df_numpy_std + df_numpy_mean)
 
-plt1 = Plot(1)
+plt1 = Plot(1, T)
 plt1.plot(df_index, df_all, 'real_data')
 plt1.plot(df_index[AFFECT:TRAIN_END], generate_data_train, 'generate_train')
 plt1.plot(df_index[TRAIN_END:], generate_data_test, 'generate_test')
 
-plt2 = Plot(2)
+plt2 = Plot(2, T)
 plt2.title('上证指数', zh=True)
 plt2.plot(df_index[TRAIN_END:-400], df_all[TRAIN_END:-400], 'real-data')
 plt2.plot(df_index[TRAIN_END:-400], generate_data_test[:-400], 'generate_test')
 
-plt3 = Plot(3)
+plt3 = Plot(3, T)
 plt3.plot(df_index[TRAIN_END:], df_all[TRAIN_END:], 'real-data')
 plt3.plot(df_index[TRAIN_END:], generate_data_test, 'generate_test')
 

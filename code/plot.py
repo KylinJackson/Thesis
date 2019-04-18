@@ -5,9 +5,10 @@ import matplotlib.pyplot as plt
 
 
 class Plot:
-    def __init__(self, index):
+    def __init__(self, index, t):
         self.index = index
         self.zh_font = fm.FontProperties(fname='font/simhei.ttf')
+        self.t = time.strftime('%Y-%m-%d %H:%M:%S', t)
 
     def plot(self, data_index, data, label=None):
         plt.figure(self.index)
@@ -21,8 +22,7 @@ class Plot:
         plt.figure(self.index)
         plt.savefig('fig/{}-{}.png'
                     .format(filename,
-                            time.strftime('%Y-%m-%d %H:%M:%S',
-                                          time.localtime())))
+                            self.t))
 
     def title(self, title, zh=False):
         plt.figure(self.index)
