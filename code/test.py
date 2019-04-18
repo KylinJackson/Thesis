@@ -5,19 +5,18 @@ from torch.utils.data import DataLoader
 
 import globalvar as gl
 from data import Action
+from evaluate import Evaluate
 from plot import Plot
 from record import Logger
 
 # 超参数设置
-NETWORK_NAME = 'LSTM'
-AFFECT = 30
-FILENAME = 'data_test.csv'
-COLUMN = 'HiPr'
+NETWORK_NAME = gl.get_value('network')
+AFFECT = gl.get_value('affect')
+FILENAME = gl.get_value('test_filename')
+COLUMN = gl.get_value('column')
 INDEX_COL = 'TrdDt'
 BATCH_SIZE = 1
 PLOT_NAME = ['fig1']
-gl.set_value('time', time.localtime())
-gl.set_value('network', NETWORK_NAME)
 
 # 加载数据
 data = Action.generate_df(
@@ -42,6 +41,8 @@ plt1.plot(data['index'], predict, 'predict data')
 plt1.save(PLOT_NAME[0])
 Plot.show()
 
+evaluator = Evaluate(data['real_data'][AFFECT:], predict)
+
 logger = Logger('test.log')
 basic_info = 'tested {}.'.format(NETWORK_NAME)
 logger.set_log(basic_info,
@@ -50,4 +51,9 @@ logger.set_log(basic_info,
                column=COLUMN,
                affect_days=AFFECT,
                network=net,
-               plot_name=PLOT_NAME)
+               plot_name=PLOT_NAME,
+               MSELoss=evaluator.MSELoss(),
+               DA=evaluator.DA(),
+               Theil=evaluator.Theil(),
+               L1Loss=evaluator.L1Loss()
+               )

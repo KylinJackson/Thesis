@@ -2,21 +2,22 @@ import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
 
+import globalvar as gl
 from data import Action
 from network import *
 from record import Logger
 
 # 超参数设置
-NETWORK_NAME = 'LSTM'
-AFFECT = 30
-HIDDEN_SIZE = 64
-NUM_LAYERS = 1
-LR = 0.0001
-EPOCH = 1000
-FILENAME = 'data_train.csv'
-COLUMN = 'HiPr'
+NETWORK_NAME = gl.get_value('network')
+AFFECT = gl.get_value('affect')
+HIDDEN_SIZE = gl.get_value('hidden_size')
+NUM_LAYERS = gl.get_value('num_layers')
+LR = gl.get_value('lr')
+EPOCH = gl.get_value('epoch')
+FILENAME = gl.get_value('train_filename')
+COLUMN = gl.get_value('column')
 INDEX_COL = 'TrdDt'
-BATCH_SIZE = 10
+BATCH_SIZE = gl.get_value('train_batch')
 
 # 加载数据
 data = Action.generate_df(
