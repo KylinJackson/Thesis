@@ -2,8 +2,8 @@ import time
 
 import globalvar as gl
 
-TRAIN = False
-TEST = False
+TRAIN = True
+TEST = True
 
 # 超参数设置
 gl.set_value('network', 'LSTM')

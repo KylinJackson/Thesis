@@ -52,4 +52,6 @@ logger.set_log(basic_info,
                column=COLUMN,
                affect_days=AFFECT,
                learning_rate=LR,
-               network=net)
+               network=net,
+               save_name='{}.pt'.format(NETWORK_NAME)
+               )
