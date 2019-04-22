@@ -29,7 +29,7 @@ data = Action.generate_df(
 data_loader = DataLoader(data['dataset'], batch_size=BATCH_SIZE, shuffle=False)
 
 # 生成网络
-net = eval(NETWORK_NAME)(AFFECT, HIDDEN_SIZE, NUM_LAYERS)
+net = eval(NETWORK_NAME)(AFFECT)
 optimizer = optim.Adam(net.parameters(), lr=LR)
 loss_func = nn.MSELoss()
 

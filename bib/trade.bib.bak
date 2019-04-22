@@ -803,6 +803,7 @@
   pages     = {1--21},
   note      = {Method: LSTM with embedded layer (ELSTM) and automatic encoder (AELSTM). Deep LSTM with embedded layer is better Accuracy: Two methods 57.2% and 56.9% IMMT: Internet of Multimedia of Things Aspects of performance: The mean square error (MSE) and Data accuracy (DA)},
   file      = {:/home/kylin/Workspace/Thesis/pdf/An innovative neural network approach for stock market prediction.pdf:PDF},
+  keywords  = {rank3},
   publisher = {Springer},
 }
 
@@ -930,6 +931,14 @@
   pages        = {766--773},
   organization = {Springer},
   file         = {:/home/kylin/Workspace/Thesis/pdf/Deep belief networks for financial prediction.pdf:PDF},
+}
+
+@Article{chun2010tutorial,
+  author  = {Chun-Lin, Liu},
+  title   = {A tutorial of the wavelet transform},
+  journal = {NTUEE, Taiwan},
+  year    = {2010},
+  file    = {:/home/kylin/Workspace/Thesis/pdf/A tutorial of the wavelet transform.pdf:PDF},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
