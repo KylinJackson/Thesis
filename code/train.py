@@ -10,8 +10,8 @@ from record import Logger
 # 超参数设置
 NETWORK_NAME = gl.get_value('network')
 AFFECT = gl.get_value('affect')
-HIDDEN_SIZE = gl.get_value('hidden_size')
-NUM_LAYERS = gl.get_value('num_layers')
+# HIDDEN_SIZE = gl.get_value('hidden_size')
+# NUM_LAYERS = gl.get_value('num_layers')
 LR = gl.get_value('lr')
 EPOCH = gl.get_value('epoch')
 FILENAME = gl.get_value('train_filename')

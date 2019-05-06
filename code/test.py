@@ -1,5 +1,3 @@
-import time
-
 import torch
 from torch.utils.data import DataLoader
 
@@ -38,6 +36,7 @@ for tx, ty in data_loader:
 plt1 = Plot(1)
 plt1.plot(data['index'], data['real_data'][AFFECT:], 'real data')
 plt1.plot(data['index'], predict, 'predict data')
+plt1.title(gl.get_value('title'), zh=True)
 plt1.save(PLOT_NAME[0])
 Plot.show()
 
