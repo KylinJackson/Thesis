@@ -9,7 +9,7 @@ class Plot:
     def __init__(self, index, time_now, network):
         self.index = index
         self.zh_font = fm.FontProperties(fname='font/simhei.ttf')
-        self.t = time.strftime('%Y年%m月%d日%H时%M分%S秒', time_now)
+        self.t = time.strftime('%Y-%m-%d-%H-%M-%S', time_now)
         self.network = network
 
     def plot(self, data_index, data, label=None):
