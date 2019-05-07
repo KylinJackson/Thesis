@@ -1,69 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9a96a07-2757-4b4b-97ee-3e022a588502" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bib/trade.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bib/trade.bib.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/action.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/IDXQTTN_CDE9257FAA6_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/data_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/data_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/伊利_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/伊利_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/华塑控股_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/华塑控股_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/永安林业_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/data/永安林业_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/evaluate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-18 21:20:49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-18 21:25:24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-18 21:26:07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-18 21:26:29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-18 21:27:25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-18 21:27:36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-19 14:36:20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-19 14:53:44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-04-20 18:31:28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:12:56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:13:52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:17:33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:21:08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:43:07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:43:56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:44:50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:59:45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-05 10:59:58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-06 20:50:08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-06 21:02:20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-07 15:18:30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-07 15:26:06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-07 15:42:02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fig/LSTM/fig1-2019-05-07 16:59:58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/font/simhei.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/network.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/plot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/record.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/save/LSTM.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2011-2015-I.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/I类股票-Monthly.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/I类股票07-16,Monthly.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/LSTM parameter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/LSTM.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/plan.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/plan.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/show/中期答辩.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/show/初期答辩.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word/基于深度学习的股价预测解决方法分析研究.doc" beforeDir="false" />
-    </list>
+    <list default="true" id="b9a96a07-2757-4b4b-97ee-3e022a588502" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plan/plan.tex">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,6 +46,21 @@
             <path>
               <item name="Thesis" type="b2602c69:ProjectViewProjectNode" />
               <item name="Thesis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Thesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="pic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Thesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="plan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Thesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="show" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -122,24 +98,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557222643987</updated>
-      <workItem from="1557222647353" duration="31000" />
+      <workItem from="1557222647353" duration="224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31000" />
+    <option name="totallyTimeSpent" value="224000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.50104386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32944915" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -157,5 +133,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plan/plan.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
 </project>
