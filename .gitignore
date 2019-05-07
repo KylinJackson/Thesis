@@ -3,3 +3,8 @@
 /code/venv/
 /code/.idea/
 .idea/
+/plan/*.aux
+/plan/*.bbl
+/plan/*.blg
+/plan/*.log
+/plan/*.synctex.gz
