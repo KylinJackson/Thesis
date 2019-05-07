@@ -1,7 +1,6 @@
 import torch
 from torch.utils.data import DataLoader
 
-import globalvar as gl
 from data import Action
 from evaluate import Evaluate
 from plot import Plot
@@ -15,7 +14,7 @@ def get_value_or_default(kwargs, key, default=None):
         return default
 
 
-def test(test_filename, **kwargs):
+def test(test_filename, time_now, title, **kwargs):
     # 超参数设置
     network_name = get_value_or_default(kwargs, 'network', default='LSTM')
     affect = get_value_or_default(kwargs, 'affect', default=30)
@@ -42,10 +41,10 @@ def test(test_filename, **kwargs):
         output = output.reshape(1).detach()
         predict.append(output * data['std'] + data['mean'])
 
-    plt1 = Plot(1)
+    plt1 = Plot(1, time_now, network_name)
     plt1.plot(data['index'], data['real_data'][affect:], 'real data')
     plt1.plot(data['index'], predict, 'predict data')
-    plt1.title(gl.get_value('title'), zh=True)
+    plt1.title(title, zh=True)
     plt1.save(plot_name[0])
     Plot.show()
 
@@ -54,7 +53,7 @@ def test(test_filename, **kwargs):
     logger = Logger('test.log')
     basic_info = 'tested {}.'.format(network_name)
     logger.set_log(basic_info,
-                   t=gl.get_value('time'),
+                   t=time_now,
                    filename=filename,
                    column=column,
                    affect_days=affect,

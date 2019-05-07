@@ -1,25 +1,36 @@
 import time
 
-import globalvar as gl
+import test
+import train
 
-TRAIN = True
+TRAIN = False
 TEST = True
 
 # 超参数设置
-gl.set_value('network', 'LSTM')
-gl.set_value('affect', 30)
-gl.set_value('test_filename', '华塑控股_test.csv')
-gl.set_value('train_filename', '华塑控股_train.csv')
-gl.set_value('title', '华塑控股')
-gl.set_value('train_batch', 20)
-gl.set_value('column', 'ClPr')
-gl.set_value('time', time.localtime())
-# gl.set_value('hidden_size', 64)
-# gl.set_value('num_layers', 1)
-gl.set_value('lr', 0.0001)
-gl.set_value('epoch', 2000)
+NETWORK = 'LSTM'
+AFFECT = 30
+TEST_FILENAME = '华塑控股_test.csv'
+TRAIN_FILENAME = '华塑控股_train.csv'
+TITLE = '华塑控股'
+TRAIN_BATCH = 20
+COLUMN = 'ClPr'
+TIME_NOW = time.localtime()
+LR = 0.0001
+EPOCH = 2000
 
 if TRAIN:
-    import train
+    train.train(TRAIN_FILENAME,
+                affect=AFFECT,
+                network=NETWORK,
+                title=TITLE,
+                train_batch=TRAIN_BATCH,
+                column=COLUMN,
+                lr=LR,
+                epoch=EPOCH)
 if TEST:
-    import test
+    test.test(TEST_FILENAME,
+              TIME_NOW,
+              TITLE,
+              network=NETWORK,
+              affect=AFFECT,
+              column=COLUMN)

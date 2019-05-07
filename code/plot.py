@@ -4,14 +4,13 @@ import time
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
-import globalvar as gl
-
 
 class Plot:
-    def __init__(self, index):
+    def __init__(self, index, time_now, network):
         self.index = index
         self.zh_font = fm.FontProperties(fname='font/simhei.ttf')
-        self.t = time.strftime('%Y-%m-%d %H:%M:%S', gl.get_value('time'))
+        self.t = time.strftime('%Y-%m-%d %H:%M:%S', time_now)
+        self.network = network
 
     def plot(self, data_index, data, label=None):
         plt.figure(self.index)
@@ -23,9 +22,9 @@ class Plot:
 
     def save(self, filename):
         plt.figure(self.index)
-        if not os.path.exists('fig/{}'.format(gl.get_value('network'))):
-            os.makedirs('fig/{}'.format(gl.get_value('network')))
-        plt.savefig('fig/{}/{}-{}.png'.format(gl.get_value('network'),
+        if not os.path.exists('fig/{}'.format(self.network)):
+            os.makedirs('fig/{}'.format(self.network))
+        plt.savefig('fig/{}/{}-{}.png'.format(self.network,
                                               filename,
                                               self.t))
 
