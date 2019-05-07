@@ -1,10 +1,5 @@
 /pdf/
 /master\ thesis
-*.blg
-*.gz
-*.log
-*.bbl
-*.aux
 /code/venv/
 /code/.idea/
 .idea/

@@ -1,0 +1,16 @@
+INFO - 2019-05-07 18:05:38 - tested LSTM.
+	affect_days - 30
+	Theil - tensor([0.0219])
+	filename - »ªËÜ¿Ø¹É_test.csv
+	MSELoss - tensor([0.0241])
+	plot_name - ['fig1']
+	column - ClPr
+	Customize - 34
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	L1Loss - 0.1266603022813797
+	DA - (0.5050505050505051, 0.5757575757575758)
