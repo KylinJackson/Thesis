@@ -47,7 +47,7 @@ class Action:
         df_index = list(df_input.index)
 
         # 生成数据集合
-        data = DataSet(torch.Tensor(np.array(df_input)))
+        data = DataSet(torch.Tensor(np.array(df_input)), device='gpu')
 
         return {
             'dataset': data,

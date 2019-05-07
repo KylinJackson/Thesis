@@ -3,16 +3,17 @@ import time
 import test
 import train
 
-TRAIN = False
+TRAIN = True
 TEST = True
 
 # 超参数设置
 NETWORK = 'LSTM'
 AFFECT = 30
-TEST_FILENAME = '华塑控股_test.csv'
-TRAIN_FILENAME = '华塑控股_train.csv'
-TITLE = '华塑控股'
-TRAIN_BATCH = 20
+STOCK_NAME = '白云机场2011-2015'
+TEST_FILENAME = STOCK_NAME + '_test.csv'
+TRAIN_FILENAME = STOCK_NAME + '_train.csv'
+TITLE = STOCK_NAME
+TRAIN_BATCH = 72
 COLUMN = 'ClPr'
 TIME_NOW = time.localtime()
 LR = 0.0001
