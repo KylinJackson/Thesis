@@ -30,7 +30,8 @@ data_loader = DataLoader(data['dataset'], batch_size=BATCH_SIZE, shuffle=False)
 
 # 生成网络
 net = eval(NETWORK_NAME)(AFFECT)
-optimizer = optim.Adam(net.parameters(), lr=LR)
+# optimizer = optim.SGD(net.parameters(), lr=LR)
+optimizer = optim.Adam(net.parameters())
 loss_func = nn.MSELoss()
 
 for step in range(EPOCH):
