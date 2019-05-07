@@ -7,6 +7,9 @@ from evaluate import Evaluate
 from plot import Plot
 from record import Logger
 
+def test(**kwargs):
+    if 'network' not in kwargs:
+        kwargs['network'] = 'LSTM'
 # 超参数设置
 NETWORK_NAME = gl.get_value('network')
 AFFECT = gl.get_value('affect')
