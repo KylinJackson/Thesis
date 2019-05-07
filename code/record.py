@@ -7,7 +7,7 @@ class Logger:
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.INFO)
 
-        fh = logging.FileHandler('log/{}'.format(filename))
+        fh = logging.FileHandler('log/{}'.format(filename), encoding='UTF8')
         fh.setLevel(logging.INFO)
 
         formatter = logging.Formatter('%(levelname)s - %(message)s')
