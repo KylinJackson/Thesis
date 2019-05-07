@@ -7,56 +7,62 @@ from evaluate import Evaluate
 from plot import Plot
 from record import Logger
 
-def test(**kwargs):
-    if 'network' not in kwargs:
-        kwargs['network'] = 'LSTM'
-# 超参数设置
-NETWORK_NAME = gl.get_value('network')
-AFFECT = gl.get_value('affect')
-FILENAME = gl.get_value('test_filename')
-COLUMN = gl.get_value('column')
-INDEX_COL = 'TrdDt'
-BATCH_SIZE = 1
-PLOT_NAME = ['fig1']
 
-# 加载数据
-data = Action.generate_df(
-    FILENAME,
-    COLUMN,
-    INDEX_COL,
-    AFFECT
-)
-data_loader = DataLoader(data['dataset'], batch_size=BATCH_SIZE, shuffle=False)
+def get_value_or_default(kwargs, key, default=None):
+    try:
+        return kwargs[key]
+    except KeyError:
+        return default
 
-net = torch.load('save/{}.pt'.format(NETWORK_NAME))
 
-predict = list()
-for tx, ty in data_loader:
-    output = net(tx.reshape(1, BATCH_SIZE, AFFECT))
-    output = output.reshape(1).detach()
-    predict.append(output * data['std'] + data['mean'])
+def test(test_filename, **kwargs):
+    # 超参数设置
+    network_name = get_value_or_default(kwargs, 'network', default='LSTM')
+    affect = get_value_or_default(kwargs, 'affect', default=30)
+    filename = test_filename
+    column = get_value_or_default(kwargs, 'column', default='ClPr')
+    index_col = 'TrdDt'
+    batch_size = 1
+    plot_name = get_value_or_default(kwargs, 'plot_name', default=['fig1', ])
 
-plt1 = Plot(1)
-plt1.plot(data['index'], data['real_data'][AFFECT:], 'real data')
-plt1.plot(data['index'], predict, 'predict data')
-plt1.title(gl.get_value('title'), zh=True)
-plt1.save(PLOT_NAME[0])
-Plot.show()
+    # 加载数据
+    data = Action.generate_df(
+        filename,
+        column,
+        index_col,
+        affect
+    )
+    data_loader = DataLoader(data['dataset'], batch_size=batch_size, shuffle=False)
 
-evaluator = Evaluate(data['real_data'][AFFECT:], predict)
+    net = torch.load('save/{}.pt'.format(network_name))
 
-logger = Logger('test.log')
-basic_info = 'tested {}.'.format(NETWORK_NAME)
-logger.set_log(basic_info,
-               t=gl.get_value('time'),
-               filename=FILENAME,
-               column=COLUMN,
-               affect_days=AFFECT,
-               network=net,
-               plot_name=PLOT_NAME,
-               MSELoss=evaluator.MSELoss(),
-               DA=evaluator.DA(),
-               Theil=evaluator.Theil(),
-               L1Loss=evaluator.L1Loss(),
-               Customize=evaluator.customize()
-               )
+    predict = list()
+    for tx, ty in data_loader:
+        output = net(tx.reshape(1, batch_size, affect))
+        output = output.reshape(1).detach()
+        predict.append(output * data['std'] + data['mean'])
+
+    plt1 = Plot(1)
+    plt1.plot(data['index'], data['real_data'][affect:], 'real data')
+    plt1.plot(data['index'], predict, 'predict data')
+    plt1.title(gl.get_value('title'), zh=True)
+    plt1.save(plot_name[0])
+    Plot.show()
+
+    evaluator = Evaluate(data['real_data'][affect:], predict)
+
+    logger = Logger('test.log')
+    basic_info = 'tested {}.'.format(network_name)
+    logger.set_log(basic_info,
+                   t=gl.get_value('time'),
+                   filename=filename,
+                   column=column,
+                   affect_days=affect,
+                   network=net,
+                   plot_name=plot_name,
+                   MSELoss=evaluator.MSELoss(),
+                   DA=evaluator.DA(),
+                   Theil=evaluator.Theil(),
+                   L1Loss=evaluator.L1Loss(),
+                   Customize=evaluator.customize()
+                   )

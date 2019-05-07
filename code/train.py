@@ -2,57 +2,62 @@ import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
 
-import globalvar as gl
 from data import Action
 from network import *
 from record import Logger
 
-# 超参数设置
-NETWORK_NAME = gl.get_value('network')
-AFFECT = gl.get_value('affect')
-# HIDDEN_SIZE = gl.get_value('hidden_size')
-# NUM_LAYERS = gl.get_value('num_layers')
-LR = gl.get_value('lr')
-EPOCH = gl.get_value('epoch')
-FILENAME = gl.get_value('train_filename')
-COLUMN = gl.get_value('column')
-INDEX_COL = 'TrdDt'
-BATCH_SIZE = gl.get_value('train_batch')
 
-# 加载数据
-data = Action.generate_df(
-    FILENAME,
-    COLUMN,
-    INDEX_COL,
-    AFFECT
-)
-data_loader = DataLoader(data['dataset'], batch_size=BATCH_SIZE, shuffle=False)
+def get_value_or_default(kwargs, key, default=None):
+    try:
+        return kwargs[key]
+    except KeyError:
+        return default
 
-# 生成网络
-net = eval(NETWORK_NAME)(AFFECT)
-# optimizer = optim.SGD(net.parameters(), lr=LR)
-optimizer = optim.Adam(net.parameters())
-loss_func = nn.MSELoss()
 
-for step in range(EPOCH):
-    loss = None
-    for tx, ty in data_loader:
-        output = net(tx.reshape(1, BATCH_SIZE, AFFECT))
-        loss = loss_func(output.reshape(BATCH_SIZE), ty)
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-    print('step: {}, loss: {}'.format(step + 1, loss.detach()))
-torch.save(net, 'save/{}.pt'.format(NETWORK_NAME))
+def train(train_filename, **kwargs):
+    # 超参数设置
+    network_name = get_value_or_default(kwargs, 'network', 'LSTM')
+    affect = get_value_or_default(kwargs, 'affect', 30)
+    lr = get_value_or_default(kwargs, 'lr', 0.0001)
+    epoch = get_value_or_default(kwargs, 'epoch', 2000)
+    filename = train_filename
+    column = get_value_or_default(kwargs, 'column', 'ClPr')
+    index_col = 'TrdDt'
+    batch_size = get_value_or_default(kwargs, 'train_batch', 1)
 
-# 生成日志
-logger = Logger('train.log')
-basic_info = 'trained {} for {} times.'.format(NETWORK_NAME, EPOCH)
-logger.set_log(basic_info,
-               filename=FILENAME,
-               column=COLUMN,
-               affect_days=AFFECT,
-               learning_rate=LR,
-               network=net,
-               save_name='{}.pt'.format(NETWORK_NAME)
-               )
+    # 加载数据
+    data = Action.generate_df(
+        filename,
+        column,
+        index_col,
+        affect
+    )
+    data_loader = DataLoader(data['dataset'], batch_size=batch_size, shuffle=False)
+
+    # 生成网络
+    net = eval(network_name)(affect)
+    optimizer = optim.Adam(net.parameters())
+    loss_func = nn.MSELoss()
+
+    for step in range(epoch):
+        loss = None
+        for tx, ty in data_loader:
+            output = net(tx.reshape(1, batch_size, affect))
+            loss = loss_func(output.reshape(batch_size), ty)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+        print('step: {}, loss: {}'.format(step + 1, loss.detach()))
+    torch.save(net, 'save/{}.pt'.format(network_name))
+
+    # 生成日志
+    logger = Logger('train.log')
+    basic_info = 'trained {} for {} times.'.format(network_name, epoch)
+    logger.set_log(basic_info,
+                   filename=filename,
+                   column=column,
+                   affect_days=affect,
+                   learning_rate=lr,
+                   network=net,
+                   save_name='{}.pt'.format(network_name)
+                   )
