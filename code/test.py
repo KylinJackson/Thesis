@@ -54,5 +54,6 @@ logger.set_log(basic_info,
                MSELoss=evaluator.MSELoss(),
                DA=evaluator.DA(),
                Theil=evaluator.Theil(),
-               L1Loss=evaluator.L1Loss()
+               L1Loss=evaluator.L1Loss(),
+               Customize=evaluator.customize()
                )

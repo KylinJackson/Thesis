@@ -1,4 +1,8 @@
 class Evaluate:
+    class LenError(RuntimeError):
+        def __init__(self):
+            print('长度不一致')
+
     def __init__(self, y_true, y_predict):
         if not isinstance(y_true, list):
             self.y_true = y_true.tolist()
@@ -11,7 +15,7 @@ class Evaluate:
 
     def check(self):
         if len(self.y_true) != len(self.y_predict):
-            raise LenError()
+            raise self.LenError()
 
     def MSELoss(self):
         self.check()
@@ -62,7 +66,46 @@ class Evaluate:
         numerator /= len(self.y_true)
         return float(numerator)
 
-
-class LenError(RuntimeError):
-    def __init__(self):
-        print('长度不一致')
+    def customize(self):
+        self.check()
+        score = 0
+        for i in range(1, len(self.y_true)):
+            rate_true = (self.y_true[i - 1] - self.y_true[i]) / self.y_true[i - 1]
+            rate_predict = (self.y_predict[i - 1] - self.y_predict[i]) / self.y_predict[i - 1]
+            if 0.06 <= rate_true <= 0.1:
+                if 0.06 <= rate_predict <= 0.1:
+                    score += 2
+                if 0. <= rate_predict <= 0.06:
+                    score += 1
+                if -0.06 <= rate_predict <= 0.:
+                    pass
+                if -0.1 <= rate_predict <= -0.06:
+                    pass
+            if 0. <= rate_true <= 0.06:
+                if 0.06 <= rate_predict <= 0.1:
+                    score += 1
+                if 0. <= rate_predict <= 0.06:
+                    score += 1
+                if -0.06 <= rate_predict <= 0.:
+                    pass
+                if -0.1 <= rate_predict <= -0.06:
+                    pass
+            if -0.06 <= rate_true <= 0.:
+                if 0.06 <= rate_predict <= 0.1:
+                    score -= 1
+                if 0. <= rate_predict <= 0.06:
+                    score -= 1
+                if -0.06 <= rate_predict <= 0.:
+                    score += 1
+                if -0.1 <= rate_predict <= -0.06:
+                    score += 1
+            if -0.1 <= rate_true <= -0.06:
+                if 0.06 <= rate_predict <= 0.1:
+                    score -= 2
+                if 0. <= rate_predict <= 0.06:
+                    score -= 1
+                if -0.06 <= rate_predict <= 0.:
+                    score += 1
+                if -0.1 <= rate_predict <= -0.06:
+                    score += 2
+        return score
