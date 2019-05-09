@@ -109,9 +109,11 @@ class Evaluate:
                 if -0.1 <= rate_predict <= -0.06:
                     score += 2
         return score
+
     def R(self):
         self.check()
         pass
+
     def MAPE(self):
         self.check()
         pass
