@@ -48,7 +48,7 @@ def test(test_filename, time_now, title, **kwargs):
     plt1.save(plot_name[0])
     Plot.show()
 
-    evaluator = Evaluate(data['real_data'][affect:], predict)
+    evaluator = Evaluate(title, data['real_data'][affect:], predict)
 
     logger = Logger('test.log')
     basic_info = 'tested {}.'.format(network_name)

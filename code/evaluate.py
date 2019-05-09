@@ -1,9 +1,12 @@
+import numpy as np
+
+
 class Evaluate:
     class LenError(RuntimeError):
         def __init__(self):
             print('长度不一致')
 
-    def __init__(self, y_true, y_predict):
+    def __init__(self, title, y_true, y_predict):
         if not isinstance(y_true, list):
             self.y_true = y_true.tolist()
         else:
@@ -12,6 +15,9 @@ class Evaluate:
             self.y_predict = y_predict.tolist()
         else:
             self.y_predict = y_predict
+        self.check()
+        np.save(title + '_true_data.npy', np.array(self.y_true))
+        np.save(title + '_predict_data.npy', np.array(self.y_predict))
 
     def check(self):
         if len(self.y_true) != len(self.y_predict):

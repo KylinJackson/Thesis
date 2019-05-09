@@ -46,7 +46,7 @@ def train(train_filename, **kwargs):
             output = net(tx.reshape(1, batch_size, affect))
             loss = loss_func(output.reshape(batch_size), ty)
             optimizer.zero_grad()
-            loss.backward()
+            loss.backward().cuda()
             optimizer.step()
         print('step: {}, loss: {}'.format(step + 1, loss.detach()))
     torch.save(net, 'save/{}.pt'.format(network_name))
