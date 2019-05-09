@@ -35,9 +35,10 @@ def train(train_filename, **kwargs):
     data_loader = DataLoader(data['dataset'], batch_size=batch_size, shuffle=False)
 
     # 生成网络
-    net = eval(network_name)(affect)
+    # net = LSTM(affect).cuda()
+    net = eval(network_name)(affect).cuda()
     optimizer = optim.Adam(net.parameters())
-    loss_func = nn.MSELoss()
+    loss_func = nn.MSELoss().cuda()
 
     for step in range(epoch):
         loss = None

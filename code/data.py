@@ -49,7 +49,7 @@ class Action:
         # 生成数据集合
         # cuda0 = torch.device('cuda:0')
         # data = DataSet(torch.Tensor(np.array(df_input), device=cuda0))
-        data = DataSet(torch.Tensor(np.array(df_input)))
+        data = DataSet(torch.Tensor(np.array(df_input)).cuda())
         return {
             'dataset': data,
             'real_data': df_all,
