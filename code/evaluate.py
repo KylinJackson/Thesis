@@ -25,7 +25,7 @@ class Evaluate:
         numerator /= len(self.y_true)
         return numerator
 
-    def Theil(self, ):
+    def Theil_U(self, ):
         self.check()
         numerator = self.MSELoss() ** (1 / 2)
         num1 = 0.
@@ -109,3 +109,9 @@ class Evaluate:
                 if -0.1 <= rate_predict <= -0.06:
                     score += 2
         return score
+    def R(self):
+        self.check()
+        pass
+    def MAPE(self):
+        self.check()
+        pass

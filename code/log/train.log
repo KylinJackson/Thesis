@@ -54,3 +54,31 @@ INFO - 2019-05-07 19:40:30 - tested LSTM.
 	column - ClPr
 	affect_days - 30
 	MSELoss - tensor([0.3481])
+INFO - 2019-05-08 18:52:11 - trained LSTM for 2000 times.
+	filename - 上证指数2009-2014_train.csv
+	column - ClPr
+	save_name - LSTM.pt
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	learning_rate - 0.0001
+	affect_days - 30
+INFO - 2019-05-08 18:22:09 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	column - ClPr
+	affect_days - 30
+	MSELoss - tensor([11042.6670])
+	Theil - tensor([0.0213])
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	Customize - 44
+	DA - (0.6190476190476191, 0.6190476190476191)
+	L1Loss - 62.68228530883789
+	plot_name - ['fig1']

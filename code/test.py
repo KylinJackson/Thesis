@@ -61,7 +61,7 @@ def test(test_filename, time_now, title, **kwargs):
                    plot_name=plot_name,
                    MSELoss=evaluator.MSELoss(),
                    DA=evaluator.DA(),
-                   Theil=evaluator.Theil(),
+                   Theil=evaluator.Theil_U(),
                    L1Loss=evaluator.L1Loss(),
                    Customize=evaluator.customize()
                    )
