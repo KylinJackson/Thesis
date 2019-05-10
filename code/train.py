@@ -60,5 +60,7 @@ def train(train_filename, **kwargs):
                    affect_days=affect,
                    learning_rate=lr,
                    network=net,
-                   save_name='{}.pt'.format(network_name)
+                   save_name='{}.pt'.format(network_name),
+                   std=data['std'],
+                   mean=data['mean']
                    )

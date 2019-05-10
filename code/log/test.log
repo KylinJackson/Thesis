@@ -78,3 +78,99 @@ INFO - 2019-05-08 18:22:09 - tested LSTM.
 	DA - (0.6190476190476191, 0.6190476190476191)
 	L1Loss - 62.68228530883789
 	plot_name - ['fig1']
+INFO - 2019-05-09 16:25:05 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	Theil - tensor([0.0207], device='cuda:0')
+	DA - (0.5714285714285714, 0.5714285714285714)
+	affect_days - 30
+	MSELoss - tensor([10427.1436], device='cuda:0')
+	Customize - 38
+	column - ClPr
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	L1Loss - 63.946842193603516
+	plot_name - ['fig1']
+INFO - 2019-05-09 16:57:07 - tested LSTM.
+	plot_name - ['fig1']
+	column - ClPr
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	filename - 上证指数2009-2014_test.csv
+	affect_days - 30
+	Customize - 36
+	MSELoss - tensor([12733.8926], device='cuda:0')
+	Theil - tensor([0.0229], device='cuda:0')
+	DA - (0.5714285714285714, 0.5714285714285714)
+	L1Loss - 70.28180694580078
+INFO - 2019-05-09 21:47:47 - tested LSTM.
+	filename - 深证成指2011-2015_test.csv
+	plot_name - ['fig1']
+	Customize - 23
+	L1Loss - 399.7970275878906
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - tensor([335029.9062], device='cuda:0')
+	column - ClPr
+	DA - (0.5252525252525253, 0.5252525252525253)
+	Theil - tensor([0.0245], device='cuda:0')
+	affect_days - 30
+INFO - 2019-05-10 12:54:38 - tested LSTM.
+	L1Loss - 232.59243774414062
+	DA - (0.5151515151515151, 0.5151515151515151)
+	Theil - tensor([0.0219], device='cuda:0')
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	filename - 深证成指2011-2015_test.csv
+	affect_days - 30
+	Customize - 28
+	plot_name - ['fig1']
+	MSELoss - tensor([141723.3438], device='cuda:0')
+INFO - 2019-05-10 14:18:22 - tested LSTM.
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	plot_name - ['fig1']
+	Theil - tensor([0.0993], device='cuda:0')
+	MSELoss - tensor([0.2492], device='cuda:0')
+	Customize - 21
+	affect_days - 30
+	filename - 武钢股份2011-2014_test.csv
+	DA - (0.46464646464646464, 0.5555555555555556)
+	L1Loss - 0.3728294372558594
+INFO - 2019-05-10 14:19:35 - tested LSTM.
+	DA - (0.43434343434343436, 0.5252525252525253)
+	plot_name - ['fig1']
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	Theil - tensor([0.0357], device='cuda:0')
+	Customize - 28
+	filename - 武钢股份2011-2014_test.csv
+	affect_days - 30
+	column - ClPr
+	L1Loss - 0.13099418580532074
+	MSELoss - tensor([0.0365], device='cuda:0')
