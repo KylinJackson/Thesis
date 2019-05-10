@@ -52,10 +52,10 @@ class Evaluate:
         high = 0
         for i in range(1, len(self.y_true)):
             if (self.y_true[i - 1] - self.y_true[i]) * \
-                    (self.y_predict[i - 1] - self.y_predict[i]) > 0:
+                    (self.y_predict[i - 1] - self.y_true[i]) > 0:
                 low += 1
             if (self.y_true[i - 1] - self.y_true[i]) * \
-                    (self.y_predict[i - 1] - self.y_predict[i]) >= 0:
+                    (self.y_predict[i - 1] - self.y_true[i]) >= 0:
                 high += 1
         low /= len(self.y_true) - 1
         high /= len(self.y_true) - 1

@@ -38,3 +38,7 @@ class Plot:
     @staticmethod
     def show():
         plt.show()
+
+    @staticmethod
+    def cla():
+        plt.cla()

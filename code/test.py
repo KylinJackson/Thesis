@@ -46,7 +46,8 @@ def test(test_filename, time_now, title, **kwargs):
     plt1.plot(data['index'], predict, 'predict data')
     plt1.title(title, zh=True)
     plt1.save(plot_name[0])
-    Plot.show()
+    # Plot.show()
+    Plot.cla()
 
     evaluator = Evaluate(title, data['real_data'][affect:], predict)
 
@@ -63,5 +64,6 @@ def test(test_filename, time_now, title, **kwargs):
                    DA=evaluator.DA(),
                    Theil=evaluator.Theil_U(),
                    L1Loss=evaluator.L1Loss(),
-                   Customize=evaluator.customize()
+                   Customize=evaluator.customize(),
+                   title=title
                    )
