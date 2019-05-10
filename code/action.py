@@ -9,8 +9,8 @@ TEST = True
 # 超参数设置
 NETWORK = 'LSTM'
 AFFECT = 30
-STOCK_NAME = '浦发银行'
-TIME = '2011-2015'
+STOCK_NAME = input('stock name: ')
+TIME = input('period: ')
 TITLE = STOCK_NAME
 STOCK_NAME += TIME
 TEST_FILENAME = STOCK_NAME + '_test.csv'

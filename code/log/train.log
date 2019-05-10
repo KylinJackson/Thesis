@@ -3099,3 +3099,65 @@ INFO - 2019-05-10 20:08:16 - tested LSTM.
 	L1Loss - 0.07387787848711014
 	Theil - tensor([0.0196], device='cuda:0')
 	affect_days - 30
+INFO - 2019-05-11 00:45:35 - trained LSTM for 2000 times.
+	column - ClPr
+	affect_days - 30
+	mean - 14.203076923076924
+	learning_rate - 0.0001
+	save_name - LSTM.pt
+	std - 1.6368375750096777
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	filename - 万里股份2011-2014_train.csv
+INFO - 2019-05-11 00:37:43 - tested LSTM.
+	column - ClPr
+	DA - (0.6666666666666666, 0.6851851851851852)
+	Theil - tensor([0.0131], device='cuda:0')
+	L1Loss - 0.34055590629577637
+	affect_days - 30
+	title - 万里股份
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	Customize - 29
+	filename - 万里股份2011-2014_test.csv
+	MSELoss - tensor([0.1968], device='cuda:0')
+	plot_name - ['fig1']
+INFO - 2019-05-11 00:52:28 - trained LSTM for 2000 times.
+	filename - 南京化纤2011-2014_train.csv
+	affect_days - 30
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	mean - 6.457000000000001
+	learning_rate - 0.0001
+	save_name - LSTM.pt
+	std - 1.84286513254047
+	column - ClPr
+INFO - 2019-05-11 00:42:57 - tested LSTM.
+	MSELoss - tensor([0.0668], device='cuda:0')
+	filename - 南京化纤2011-2014_test.csv
+	affect_days - 30
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	Theil - tensor([0.0167], device='cuda:0')
+	L1Loss - 0.21013599634170532
+	plot_name - ['fig1']
+	title - 南京化纤
+	DA - (0.6767676767676768, 0.696969696969697)
+	column - ClPr
+	Customize - 22
