@@ -79,3 +79,5 @@ def test(test_filename, time_now, title, **kwargs):
           '{} = {}'.format('R', evaluator.R()),
           file=f_out,
           sep='\n')
+    f_out.close()
+    return evaluator

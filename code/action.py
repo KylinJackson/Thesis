@@ -8,7 +8,7 @@ TEST = True
 
 # 超参数设置
 NETWORK = 'LSTM'
-AFFECT = 30
+AFFECT = 10
 STOCK_NAME = input('stock name: ')
 TIME = input('period: ')
 TITLE = STOCK_NAME
