@@ -39,7 +39,7 @@ def test(test_filename, time_now, title, **kwargs):
     for tx, ty in data_loader:
         output = net(tx.reshape(1, batch_size, affect))
         output = output.reshape(1).detach()
-        predict.append(output * data['std'] + data['mean'])
+        predict.append(float(output) * data['std'] + data['mean'])
 
     plt1 = Plot(1, time_now, network_name)
     plt1.plot(data['index'], data['real_data'][affect:], 'real data')

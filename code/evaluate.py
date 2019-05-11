@@ -48,18 +48,17 @@ class Evaluate:
 
     def DA(self):
         self.check()
-        low = 0
-        high = 0
+
+        da = 0
+
         for i in range(1, len(self.y_true)):
-            if (self.y_true[i - 1] - self.y_true[i]) * \
-                    (self.y_predict[i - 1] - self.y_true[i]) > 0:
-                low += 1
-            if (self.y_true[i - 1] - self.y_true[i]) * \
-                    (self.y_predict[i - 1] - self.y_true[i]) >= 0:
-                high += 1
-        low /= len(self.y_true) - 1
-        high /= len(self.y_true) - 1
-        return low, high
+            if self.y_true[i] > self.y_true[i - 1] and self.y_predict[i] > self.y_true[i - 1]:
+                da += 1
+            elif self.y_true[i] == self.y_true[i - 1] and -0.01 < self.y_predict[i] - self.y_true[i - 1] < 0.01:
+                da += 1
+            elif self.y_true[i] < self.y_true[i - 1] and self.y_predict[i] < self.y_true[i - 1]:
+                da += 1
+        return da / (len(self.y_true) - 1)
 
     def L2Loss(self):
         return self.MSELoss()

@@ -3206,3 +3206,36 @@ INFO - 2019-05-11 19:41:57 - trained LSTM for 2000 times.
 	  )
 	)
 	column - ClPr
+INFO - 2019-05-11 21:26:36 - trained LSTM for 2000 times.
+	filename - 中信证券2011-2014_train.csv
+	std - 1.1677109815639508
+	column - ClPr
+	learning_rate - 0.0001
+	save_name - LSTM.pt
+	affect_days - 30
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	mean - 12.045058823529411
+INFO - 2019-05-11 21:18:14 - tested LSTM.
+	affect_days - 30
+	L1Loss - 0.8754880692104876
+	DA - 0.5185185185185185
+	Customize - 31
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	R - 5.016193963912788
+	title - 中信证券
+	filename - 中信证券2011-2014_test.csv
+	Theil - 0.03520397661189342
+	column - ClPr
+	plot_name - ['fig1']
+	MSELoss - 1.5351642683266407
+	MAPE - -0.02494193824937773
