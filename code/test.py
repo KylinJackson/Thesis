@@ -65,5 +65,17 @@ def test(test_filename, time_now, title, **kwargs):
                    Theil=evaluator.Theil_U(),
                    L1Loss=evaluator.L1Loss(),
                    Customize=evaluator.customize(),
-                   title=title
+                   title=title,
+                   MAPE=evaluator.MAPE(),
+                   R=evaluator.R()
                    )
+    f_out = open('log/{}.txt'.format(title), 'w')
+    print('{} = {}'.format('time', time_now),
+          '{} = {}'.format('MSELoss', evaluator.MSELoss()),
+          '{} = {}'.format('DA', evaluator.DA()),
+          '{} = {}'.format('Theil_U', evaluator.Theil_U()),
+          '{} = {}'.format('L1Loss', evaluator.L1Loss()),
+          '{} = {}'.format('MAPE', evaluator.MAPE()),
+          '{} = {}'.format('R', evaluator.R()),
+          file=f_out,
+          sep='\n')

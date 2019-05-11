@@ -72,6 +72,30 @@ class Evaluate:
         numerator /= len(self.y_true)
         return float(numerator)
 
+    def R(self):
+        self.check()
+        y_true_np = np.array(self.y_true)
+        y_predict_np = np.array(self.y_predict)
+        mean_true = y_true_np.mean()
+        mean_predict = y_predict_np.mean()
+        numerator = 0.
+        denominator = 0.
+        for i in range(len(self.y_true)):
+            numerator += (self.y_true[i] - mean_true) * (self.y_predict[i] - mean_predict)
+            denominator += (self.y_true[i] - mean_true) ** 2 * (self.y_predict[i] - mean_predict) ** 2
+        denominator = denominator ** (1 / 2)
+        return numerator / denominator
+
+    def MAPE(self):
+        self.check()
+        self.check()
+        numerator = 0.
+        for i in range(len(self.y_true)):
+            unit = self.y_true[i] - self.y_predict[i]
+            unit /= self.y_true[i]
+            numerator += unit
+        return numerator / len(self.y_true)
+
     def customize(self):
         self.check()
         score = 0
@@ -115,11 +139,3 @@ class Evaluate:
                 if -0.1 <= rate_predict <= -0.06:
                     score += 2
         return score
-
-    def R(self):
-        self.check()
-        pass
-
-    def MAPE(self):
-        self.check()
-        pass

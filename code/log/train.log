@@ -3161,3 +3161,48 @@ INFO - 2019-05-11 00:42:57 - tested LSTM.
 	DA - (0.6767676767676768, 0.696969696969697)
 	column - ClPr
 	Customize - 22
+INFO - 2019-05-11 16:54:06 - trained LSTM for 2000 times.
+	filename - 上工申贝2011-2014_train.csv
+	std - 2.788119756355854
+	affect_days - 30
+	learning_rate - 0.0001
+	save_name - LSTM.pt
+	mean - 9.163011904761905
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+INFO - 2019-05-11 16:46:02 - tested LSTM.
+	Customize - 11
+	filename - 上工申贝2011-2014_test.csv
+	plot_name - ['fig1']
+	affect_days - 30
+	MSELoss - tensor([0.1374], device='cuda:0')
+	DA - (0.6732673267326733, 0.7029702970297029)
+	L1Loss - 0.2803756296634674
+	Theil - tensor([0.0150], device='cuda:0')
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	title - 上工申贝
+INFO - 2019-05-11 19:41:57 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	affect_days - 30
+	learning_rate - 0.0001
+	mean - 2486.5860222222223
+	filename - 上证指数2009-2014_train.csv
+	save_name - LSTM.pt
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr

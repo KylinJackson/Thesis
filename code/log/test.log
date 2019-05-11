@@ -2633,3 +2633,20 @@ INFO - 2019-05-11 00:42:57 - tested LSTM.
 	DA - (0.6767676767676768, 0.696969696969697)
 	column - ClPr
 	Customize - 22
+INFO - 2019-05-11 16:46:02 - tested LSTM.
+	Customize - 11
+	filename - 上工申贝2011-2014_test.csv
+	plot_name - ['fig1']
+	affect_days - 30
+	MSELoss - tensor([0.1374], device='cuda:0')
+	DA - (0.6732673267326733, 0.7029702970297029)
+	L1Loss - 0.2803756296634674
+	Theil - tensor([0.0150], device='cuda:0')
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	title - 上工申贝
