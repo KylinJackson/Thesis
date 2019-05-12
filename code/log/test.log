@@ -2802,3 +2802,1778 @@ INFO - 2019-05-12 01:18:07 - tested LSTM.
 	column - ClPr
 	filename - 上证指数2009-2014_test.csv
 	DA - 0.528
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.009587072737538557
+	MSELoss - 2156.833487806854
+	network - LSTM(
+	  (lstm): LSTM(10, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 6.137790527035997
+	Customize - 35
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.504
+	column - ClPr
+	MAPE - 0.009119564841326469
+	L1Loss - 33.53972354330404
+	affect_days - 10
+INFO - 2019-05-12 12:05:24 - trained LSTM for 2000 times.
+	mean - 2486.5860222222223
+	learning_rate - 0.0001
+	filename - 上证指数2009-2014_train.csv
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	save_name - LSTM.pt
+	affect_days - 20
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.009945367223680822
+	MSELoss - 2376.8171615045903
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 5.990940323597827
+	Customize - 51
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.4956521739130435
+	column - ClPr
+	MAPE - 0.009499767060189266
+	L1Loss - 34.51383794761719
+	affect_days - 20
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.009945367223680822
+	MSELoss - 2376.8171615045903
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 5.990940323597827
+	Customize - 51
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.4956521739130435
+	column - ClPr
+	MAPE - 0.009499767060189266
+	L1Loss - 34.51383794761719
+	affect_days - 20
+INFO - 2019-05-12 12:15:38 - trained LSTM for 2000 times.
+	mean - 2486.5860222222223
+	learning_rate - 0.0001
+	filename - 上证指数2009-2014_train.csv
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	save_name - LSTM.pt
+	affect_days - 30
+INFO - 2019-05-12 12:15:38 - trained LSTM for 2000 times.
+	mean - 2486.5860222222223
+	learning_rate - 0.0001
+	filename - 上证指数2009-2014_train.csv
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	save_name - LSTM.pt
+	affect_days - 30
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.01711595357709385
+	MSELoss - 7194.732268974328
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 6.2827066123950495
+	Customize - 42
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.5142857142857142
+	column - ClPr
+	MAPE - 0.012069830598718443
+	L1Loss - 51.16102804650782
+	affect_days - 30
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.01711595357709385
+	MSELoss - 7194.732268974328
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 6.2827066123950495
+	Customize - 42
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.5142857142857142
+	column - ClPr
+	MAPE - 0.012069830598718443
+	L1Loss - 51.16102804650782
+	affect_days - 30
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.01711595357709385
+	MSELoss - 7194.732268974328
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 6.2827066123950495
+	Customize - 42
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.5142857142857142
+	column - ClPr
+	MAPE - 0.012069830598718443
+	L1Loss - 51.16102804650782
+	affect_days - 30
+INFO - 2019-05-12 12:25:47 - trained LSTM for 2000 times.
+	mean - 2486.5860222222223
+	learning_rate - 0.0001
+	filename - 上证指数2009-2014_train.csv
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	save_name - LSTM.pt
+	affect_days - 40
+INFO - 2019-05-12 12:25:47 - trained LSTM for 2000 times.
+	mean - 2486.5860222222223
+	learning_rate - 0.0001
+	filename - 上证指数2009-2014_train.csv
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	save_name - LSTM.pt
+	affect_days - 40
+INFO - 2019-05-12 12:25:47 - trained LSTM for 2000 times.
+	mean - 2486.5860222222223
+	learning_rate - 0.0001
+	filename - 上证指数2009-2014_train.csv
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	save_name - LSTM.pt
+	affect_days - 40
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.022960420113689674
+	MSELoss - 13103.952723909553
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 6.245188599981636
+	Customize - 43
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.4421052631578947
+	column - ClPr
+	MAPE - 0.020394299238107334
+	L1Loss - 68.69396815546679
+	affect_days - 40
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.022960420113689674
+	MSELoss - 13103.952723909553
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 6.245188599981636
+	Customize - 43
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.4421052631578947
+	column - ClPr
+	MAPE - 0.020394299238107334
+	L1Loss - 68.69396815546679
+	affect_days - 40
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.022960420113689674
+	MSELoss - 13103.952723909553
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 6.245188599981636
+	Customize - 43
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.4421052631578947
+	column - ClPr
+	MAPE - 0.020394299238107334
+	L1Loss - 68.69396815546679
+	affect_days - 40
+INFO - 2019-05-12 11:44:38 - tested LSTM.
+	Theil - 0.022960420113689674
+	MSELoss - 13103.952723909553
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	title - 上证指数
+	R - 6.245188599981636
+	Customize - 43
+	plot_name - ['fig1']
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.4421052631578947
+	column - ClPr
+	MAPE - 0.020394299238107334
+	L1Loss - 68.69396815546679
+	affect_days - 40
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.002433270711896343
+	Theil - 0.007464022383335087
+	plot_name - ['fig1']
+	affect_days - 5
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 24.075345772025642
+	MSELoss - 1303.451714945808
+	title - 上证指数
+	Customize - 33
+	R - 6.196601924841357
+	DA - 0.5384615384615384
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:10:15 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 10
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(10, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.00708196532545024
+	Theil - 0.00827166138877313
+	plot_name - ['fig1']
+	affect_days - 10
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 29.033110239063777
+	MSELoss - 1609.8357856488426
+	title - 上证指数
+	Customize - 37
+	R - 6.1423912707519746
+	DA - 0.512
+	network - LSTM(
+	  (lstm): LSTM(10, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.00708196532545024
+	Theil - 0.00827166138877313
+	plot_name - ['fig1']
+	affect_days - 10
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 29.033110239063777
+	MSELoss - 1609.8357856488426
+	title - 上证指数
+	Customize - 37
+	R - 6.1423912707519746
+	DA - 0.512
+	network - LSTM(
+	  (lstm): LSTM(10, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:29:25 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 15
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:29:25 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 15
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.0062357670228937595
+	Theil - 0.010464403900393087
+	plot_name - ['fig1']
+	affect_days - 15
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 32.71910053604606
+	MSELoss - 2606.690187716422
+	title - 上证指数
+	Customize - 30
+	R - 5.96785417103862
+	DA - 0.5
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.0062357670228937595
+	Theil - 0.010464403900393087
+	plot_name - ['fig1']
+	affect_days - 15
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 32.71910053604606
+	MSELoss - 2606.690187716422
+	title - 上证指数
+	Customize - 30
+	R - 5.96785417103862
+	DA - 0.5
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.0062357670228937595
+	Theil - 0.010464403900393087
+	plot_name - ['fig1']
+	affect_days - 15
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 32.71910053604606
+	MSELoss - 2606.690187716422
+	title - 上证指数
+	Customize - 30
+	R - 5.96785417103862
+	DA - 0.5
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:39:37 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 20
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:39:37 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 20
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:39:37 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 20
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.008134815898371712
+	Theil - 0.011907834527838964
+	plot_name - ['fig1']
+	affect_days - 20
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 35.12541088688488
+	MSELoss - 3409.3140597570805
+	title - 上证指数
+	Customize - 46
+	R - 6.090879886173208
+	DA - 0.5043478260869565
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.008134815898371712
+	Theil - 0.011907834527838964
+	plot_name - ['fig1']
+	affect_days - 20
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 35.12541088688488
+	MSELoss - 3409.3140597570805
+	title - 上证指数
+	Customize - 46
+	R - 6.090879886173208
+	DA - 0.5043478260869565
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.008134815898371712
+	Theil - 0.011907834527838964
+	plot_name - ['fig1']
+	affect_days - 20
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 35.12541088688488
+	MSELoss - 3409.3140597570805
+	title - 上证指数
+	Customize - 46
+	R - 6.090879886173208
+	DA - 0.5043478260869565
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.008134815898371712
+	Theil - 0.011907834527838964
+	plot_name - ['fig1']
+	affect_days - 20
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 35.12541088688488
+	MSELoss - 3409.3140597570805
+	title - 上证指数
+	Customize - 46
+	R - 6.090879886173208
+	DA - 0.5043478260869565
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:58:43 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 25
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:58:43 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 25
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:58:43 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 25
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 13:58:43 - trained LSTM for 2000 times.
+	std - 383.2122258994724
+	learning_rate - 0.0001
+	column - ClPr
+	affect_days - 25
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.01251813699260456
+	Theil - 0.01678896868304444
+	plot_name - ['fig1']
+	affect_days - 25
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 50.52770799141671
+	MSELoss - 6825.6375844416225
+	title - 上证指数
+	Customize - 44
+	R - 5.982730712901347
+	DA - 0.4636363636363636
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.01251813699260456
+	Theil - 0.01678896868304444
+	plot_name - ['fig1']
+	affect_days - 25
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 50.52770799141671
+	MSELoss - 6825.6375844416225
+	title - 上证指数
+	Customize - 44
+	R - 5.982730712901347
+	DA - 0.4636363636363636
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.01251813699260456
+	Theil - 0.01678896868304444
+	plot_name - ['fig1']
+	affect_days - 25
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 50.52770799141671
+	MSELoss - 6825.6375844416225
+	title - 上证指数
+	Customize - 44
+	R - 5.982730712901347
+	DA - 0.4636363636363636
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.01251813699260456
+	Theil - 0.01678896868304444
+	plot_name - ['fig1']
+	affect_days - 25
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 50.52770799141671
+	MSELoss - 6825.6375844416225
+	title - 上证指数
+	Customize - 44
+	R - 5.982730712901347
+	DA - 0.4636363636363636
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 12:40:41 - tested LSTM.
+	MAPE - 0.01251813699260456
+	Theil - 0.01678896868304444
+	plot_name - ['fig1']
+	affect_days - 25
+	column - ClPr
+	filename - 上证指数2009-2014_test.csv
+	L1Loss - 50.52770799141671
+	MSELoss - 6825.6375844416225
+	title - 上证指数
+	Customize - 44
+	R - 5.982730712901347
+	DA - 0.4636363636363636
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 5
+	L1Loss - 108.73434830339016
+	Customize - 53
+	Theil - 0.034412243714885896
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.46923076923076923
+	MAPE - 0.015876123757687904
+	R - 6.408742634491006
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 26972.84314777412
+INFO - 2019-05-12 21:04:50 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 10
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(10, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 10
+	L1Loss - 139.776613653989
+	Customize - 54
+	Theil - 0.04123524873943765
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.488
+	MAPE - 0.004977967114412904
+	R - 6.222729339558595
+	network - LSTM(
+	  (lstm): LSTM(10, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 39495.7131695716
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 10
+	L1Loss - 139.776613653989
+	Customize - 54
+	Theil - 0.04123524873943765
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.488
+	MAPE - 0.004977967114412904
+	R - 6.222729339558595
+	network - LSTM(
+	  (lstm): LSTM(10, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 39495.7131695716
+INFO - 2019-05-12 21:04:51 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 15
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:51 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 15
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 15
+	L1Loss - 98.39274845696664
+	Customize - 68
+	Theil - 0.03158792641003394
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.425
+	MAPE - 0.029632021166668528
+	R - 6.378754608007022
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 23019.51163934338
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 15
+	L1Loss - 98.39274845696664
+	Customize - 68
+	Theil - 0.03158792641003394
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.425
+	MAPE - 0.029632021166668528
+	R - 6.378754608007022
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 23019.51163934338
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 15
+	L1Loss - 98.39274845696664
+	Customize - 68
+	Theil - 0.03158792641003394
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.425
+	MAPE - 0.029632021166668528
+	R - 6.378754608007022
+	network - LSTM(
+	  (lstm): LSTM(15, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 23019.51163934338
+INFO - 2019-05-12 21:04:52 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 20
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:52 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 20
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:52 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 20
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 20
+	L1Loss - 133.52782182324253
+	Customize - 68
+	Theil - 0.04432848160490108
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.43478260869565216
+	MAPE - 0.035456922997369134
+	R - 6.147840662164135
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 45450.209275345645
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 20
+	L1Loss - 133.52782182324253
+	Customize - 68
+	Theil - 0.04432848160490108
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.43478260869565216
+	MAPE - 0.035456922997369134
+	R - 6.147840662164135
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 45450.209275345645
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 20
+	L1Loss - 133.52782182324253
+	Customize - 68
+	Theil - 0.04432848160490108
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.43478260869565216
+	MAPE - 0.035456922997369134
+	R - 6.147840662164135
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 45450.209275345645
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 20
+	L1Loss - 133.52782182324253
+	Customize - 68
+	Theil - 0.04432848160490108
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.43478260869565216
+	MAPE - 0.035456922997369134
+	R - 6.147840662164135
+	network - LSTM(
+	  (lstm): LSTM(20, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 45450.209275345645
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 25
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 25
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 25
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 25
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 25
+	L1Loss - 119.40945981324779
+	Customize - 71
+	Theil - 0.036439126162025715
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37272727272727274
+	MAPE - 0.04234980515043942
+	R - 6.28733904595386
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 31058.19911435215
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 25
+	L1Loss - 119.40945981324779
+	Customize - 71
+	Theil - 0.036439126162025715
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37272727272727274
+	MAPE - 0.04234980515043942
+	R - 6.28733904595386
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 31058.19911435215
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 25
+	L1Loss - 119.40945981324779
+	Customize - 71
+	Theil - 0.036439126162025715
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37272727272727274
+	MAPE - 0.04234980515043942
+	R - 6.28733904595386
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 31058.19911435215
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 25
+	L1Loss - 119.40945981324779
+	Customize - 71
+	Theil - 0.036439126162025715
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37272727272727274
+	MAPE - 0.04234980515043942
+	R - 6.28733904595386
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 31058.19911435215
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 25
+	L1Loss - 119.40945981324779
+	Customize - 71
+	Theil - 0.036439126162025715
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37272727272727274
+	MAPE - 0.04234980515043942
+	R - 6.28733904595386
+	network - LSTM(
+	  (lstm): LSTM(25, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 31058.19911435215
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 30
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 30
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 30
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 30
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:53 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 30
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 30
+	L1Loss - 137.1275107144503
+	Customize - 63
+	Theil - 0.04562302740402824
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.44761904761904764
+	MAPE - 0.04594630620917282
+	R - 6.036224521528479
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48975.40455300195
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 30
+	L1Loss - 137.1275107144503
+	Customize - 63
+	Theil - 0.04562302740402824
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.44761904761904764
+	MAPE - 0.04594630620917282
+	R - 6.036224521528479
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48975.40455300195
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 30
+	L1Loss - 137.1275107144503
+	Customize - 63
+	Theil - 0.04562302740402824
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.44761904761904764
+	MAPE - 0.04594630620917282
+	R - 6.036224521528479
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48975.40455300195
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 30
+	L1Loss - 137.1275107144503
+	Customize - 63
+	Theil - 0.04562302740402824
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.44761904761904764
+	MAPE - 0.04594630620917282
+	R - 6.036224521528479
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48975.40455300195
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 30
+	L1Loss - 137.1275107144503
+	Customize - 63
+	Theil - 0.04562302740402824
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.44761904761904764
+	MAPE - 0.04594630620917282
+	R - 6.036224521528479
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48975.40455300195
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 30
+	L1Loss - 137.1275107144503
+	Customize - 63
+	Theil - 0.04562302740402824
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.44761904761904764
+	MAPE - 0.04594630620917282
+	R - 6.036224521528479
+	network - LSTM(
+	  (lstm): LSTM(30, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48975.40455300195
+INFO - 2019-05-12 21:04:54 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 35
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:54 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 35
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:54 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 35
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:54 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 35
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:54 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 35
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:54 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 35
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 35
+	L1Loss - 163.0780729133242
+	Customize - 60
+	Theil - 0.045632020649260883
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37
+	MAPE - 0.05988659809575749
+	R - 6.152002609847822
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48963.69235452158
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 35
+	L1Loss - 163.0780729133242
+	Customize - 60
+	Theil - 0.045632020649260883
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37
+	MAPE - 0.05988659809575749
+	R - 6.152002609847822
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48963.69235452158
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 35
+	L1Loss - 163.0780729133242
+	Customize - 60
+	Theil - 0.045632020649260883
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37
+	MAPE - 0.05988659809575749
+	R - 6.152002609847822
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48963.69235452158
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 35
+	L1Loss - 163.0780729133242
+	Customize - 60
+	Theil - 0.045632020649260883
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37
+	MAPE - 0.05988659809575749
+	R - 6.152002609847822
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48963.69235452158
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 35
+	L1Loss - 163.0780729133242
+	Customize - 60
+	Theil - 0.045632020649260883
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37
+	MAPE - 0.05988659809575749
+	R - 6.152002609847822
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48963.69235452158
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 35
+	L1Loss - 163.0780729133242
+	Customize - 60
+	Theil - 0.045632020649260883
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37
+	MAPE - 0.05988659809575749
+	R - 6.152002609847822
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48963.69235452158
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 35
+	L1Loss - 163.0780729133242
+	Customize - 60
+	Theil - 0.045632020649260883
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.37
+	MAPE - 0.05988659809575749
+	R - 6.152002609847822
+	network - LSTM(
+	  (lstm): LSTM(35, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 48963.69235452158
+INFO - 2019-05-12 21:04:55 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 40
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:55 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 40
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:55 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 40
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:55 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 40
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:55 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 40
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:55 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 40
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:55 - trained LSTM for 1 times.
+	filename - 上证指数2009-2014_train.csv
+	mean - 2486.5860222222223
+	column - ClPr
+	learning_rate - 0.0001
+	affect_days - 40
+	save_name - LSTM.pt
+	std - 383.2122258994724
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 40
+	L1Loss - 145.66386991728294
+	Customize - 61
+	Theil - 0.04674039567210957
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.4
+	MAPE - 0.04853542378092903
+	R - 6.074065263145633
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 52457.316042920625
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 40
+	L1Loss - 145.66386991728294
+	Customize - 61
+	Theil - 0.04674039567210957
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.4
+	MAPE - 0.04853542378092903
+	R - 6.074065263145633
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 52457.316042920625
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 40
+	L1Loss - 145.66386991728294
+	Customize - 61
+	Theil - 0.04674039567210957
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.4
+	MAPE - 0.04853542378092903
+	R - 6.074065263145633
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 52457.316042920625
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 40
+	L1Loss - 145.66386991728294
+	Customize - 61
+	Theil - 0.04674039567210957
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.4
+	MAPE - 0.04853542378092903
+	R - 6.074065263145633
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 52457.316042920625
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 40
+	L1Loss - 145.66386991728294
+	Customize - 61
+	Theil - 0.04674039567210957
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.4
+	MAPE - 0.04853542378092903
+	R - 6.074065263145633
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 52457.316042920625
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 40
+	L1Loss - 145.66386991728294
+	Customize - 61
+	Theil - 0.04674039567210957
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.4
+	MAPE - 0.04853542378092903
+	R - 6.074065263145633
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 52457.316042920625
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 40
+	L1Loss - 145.66386991728294
+	Customize - 61
+	Theil - 0.04674039567210957
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.4
+	MAPE - 0.04853542378092903
+	R - 6.074065263145633
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 52457.316042920625
+INFO - 2019-05-12 21:04:45 - tested LSTM.
+	filename - 上证指数2009-2014_test.csv
+	title - 上证指数
+	affect_days - 40
+	L1Loss - 145.66386991728294
+	Customize - 61
+	Theil - 0.04674039567210957
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.4
+	MAPE - 0.04853542378092903
+	R - 6.074065263145633
+	network - LSTM(
+	  (lstm): LSTM(40, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MSELoss - 52457.316042920625

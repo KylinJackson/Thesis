@@ -15,14 +15,18 @@ TITLE = STOCK_NAME
 STOCK_NAME += TIME
 TEST_FILENAME = STOCK_NAME + '_test.csv'
 TRAIN_FILENAME = STOCK_NAME + '_train.csv'
-TRAIN_BATCH = 5
+TRAIN_BATCH = 10
 COLUMN = 'ClPr'
 TIME_NOW = time.localtime()
 LR = 0.0001
 EPOCH = 2000
 
 result = list()
-for i in range(5, 40, 5):
+for i in range(5, 45, 5):
+    if i % 10 == 0:
+        TRAIN_BATCH = 10
+    else:
+        TRAIN_BATCH = 5
     AFFECT = i
     if TRAIN:
         train.train(TRAIN_FILENAME,
@@ -49,14 +53,15 @@ l1_list = []
 r_list = []
 mape_list = []
 index_list = []
-for i in result:
-    index_list.append(i + 1)
-    da_list.append(float(i.DA()))
-    mse_list.append(float(i.MSELoss()))
-    theil_list.append(float(i.Theil_U()))
-    l1_list.append(float(i.L1Loss()))
-    r_list.append(float(i.R()))
-    mape_list.append(float(i.MAPE()))
+
+for k, v in enumerate(result):
+    index_list.append(k + 1)
+    da_list.append(float(v.DA()))
+    mse_list.append(float(v.MSELoss()))
+    theil_list.append(float(v.Theil_U()))
+    l1_list.append(float(v.L1Loss()))
+    r_list.append(float(v.R()))
+    mape_list.append(float(v.MAPE()))
 
 now = time.localtime()
 da_plt = plot.Plot(1, now, 'LSTM')
