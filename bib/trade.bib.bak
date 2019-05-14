@@ -941,4 +941,13 @@
   file    = {:/home/kylin/Workspace/Thesis/pdf/A tutorial of the wavelet transform.pdf:PDF},
 }
 
+@Misc{Bliemel1973,
+  author    = {Bliemel, Friedhelm},
+  title     = {Theil's forecast accuracy coefficient: A clarification},
+  year      = {1973},
+  file      = {:C\:/Users/zhyq1/Documents/Worksapce/Thesis/pdf/Theil's Forecast Accuracy.pdf:PDF},
+  keywords  = {rank5},
+  publisher = {SAGE Publications Sage CA: Los Angeles, CA},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

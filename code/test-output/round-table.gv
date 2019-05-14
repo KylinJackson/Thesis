@@ -1,9 +1,0 @@
-// Feedforward Neural Network
-digraph {
-	A [label=<Regular<SUB>subscript</SUB>>]
-	B [label="Sir Bedevere the Wise"]
-	L [label="Sir Lancelot the Brave"]
-	A -> B
-	A -> L
-	B -> L [constraint=false]
-}
