@@ -5516,3 +5516,69 @@ INFO - 2019-05-15 19:24:29 - tested LSTM.
 	column - ClPr
 	R - 8.956029355295694
 	MAPE - -0.0199583434538321
+INFO - 2019-05-15 19:32:22 - trained LSTM for 1000 times.
+	std - 1.3422809422106343
+	column - ClPr
+	mean - 6.419988165680474
+	learning_rate - 0.0001
+	filename - 中国石化2011-2014_train.csv
+	affect_days - 5
+	save_name - LSTM.pt
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+INFO - 2019-05-15 19:29:50 - tested LSTM.
+	plot_name - ['fig1']
+	MSELoss - 0.015478277543044688
+	Customize - 49
+	filename - 中国石化2011-2014_test.csv
+	affect_days - 5
+	L1Loss - 0.07683861291501645
+	R - 5.894525680881279
+	column - ClPr
+	DA - 0.46153846153846156
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MAPE - 0.005188156587037817
+	title - 中国石化
+	Theil - 0.011567268376013833
+INFO - 2019-05-15 19:35:53 - trained LSTM for 1000 times.
+	std - 4.721957194834867
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	filename - 中国平安2011-2014_train.csv
+	column - ClPr
+	mean - 41.137337278106514
+	save_name - LSTM.pt
+	affect_days - 5
+	learning_rate - 0.0001
+INFO - 2019-05-15 19:33:24 - tested LSTM.
+	DA - 0.5
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	L1Loss - 0.8331914162383338
+	R - 5.135787534842672
+	title - 中国平安
+	filename - 中国平安2011-2014_test.csv
+	column - ClPr
+	MAPE - 0.006256239993620193
+	plot_name - ['fig1']
+	Theil - 0.015196128895893796
+	MSELoss - 1.9864557678502843
+	affect_days - 5
+	Customize - 35
