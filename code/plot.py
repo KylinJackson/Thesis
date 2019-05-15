@@ -42,3 +42,8 @@ class Plot:
     @staticmethod
     def cla():
         plt.cla()
+
+    def xylabel(self, xlabel, ylabel):
+        plt.figure(self.index)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)

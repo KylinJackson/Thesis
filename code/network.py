@@ -23,4 +23,3 @@ class LSTM(nn.Module):
 if __name__ == '__main__':
     lstm = LSTM(30)
     print(lstm)
-    print(elstm)

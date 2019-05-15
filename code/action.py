@@ -3,23 +3,23 @@ import time
 import test
 import train
 
-TRAIN = True
+TRAIN = False
 TEST = True
 
 # 超参数设置
 NETWORK = 'LSTM'
-AFFECT = 10
+AFFECT = 5
 STOCK_NAME = input('stock name: ')
 TIME = input('period: ')
 TITLE = STOCK_NAME
 STOCK_NAME += TIME
 TEST_FILENAME = STOCK_NAME + '_test.csv'
 TRAIN_FILENAME = STOCK_NAME + '_train.csv'
-TRAIN_BATCH = 10
+TRAIN_BATCH = 20
 COLUMN = 'ClPr'
 TIME_NOW = time.localtime()
 LR = 0.0001
-EPOCH = 2000
+EPOCH = 1000
 
 if TRAIN:
     train.train(TRAIN_FILENAME,

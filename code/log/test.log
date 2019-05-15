@@ -4577,3 +4577,79 @@ INFO - 2019-05-12 21:04:45 - tested LSTM.
 	  )
 	)
 	MSELoss - 52457.316042920625
+INFO - 2019-05-15 17:19:17 - tested LSTM.
+	column - ClPr
+	R - 6.246215641012898
+	network - LSTM(
+	  (lstm): LSTM(10, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	Theil - 0.007734861077394476
+	title - 上证指数
+	DA - 0.52
+	plot_name - ['fig1']
+	MSELoss - 1410.569833784143
+	MAPE - 0.005179337541154718
+	affect_days - 10
+	L1Loss - 26.79980593885188
+	Customize - 44
+	filename - 上证指数2009-2014_test.csv
+INFO - 2019-05-15 17:22:12 - tested LSTM.
+	MSELoss - 1331.4740564191775
+	Theil - 0.0075545459069876
+	R - 6.302657184563174
+	Customize - 50
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MAPE - 0.004103017341547706
+	filename - 上证指数2009-2014_test.csv
+	column - ClPr
+	plot_name - ['fig1']
+	DA - 0.5307692307692308
+	title - 上证指数
+	L1Loss - 24.113553141092687
+	affect_days - 5
+INFO - 2019-05-15 17:31:51 - tested LSTM.
+	MAPE - 0.007246992309853425
+	plot_name - ['fig1']
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	column - ClPr
+	filename - 深证成指2011-2015_test.csv
+	L1Loss - 112.44932151278962
+	R - 5.852895227482479
+	affect_days - 5
+	Theil - 0.0103613918409108
+	DA - 0.5080645161290323
+	MSELoss - 30564.051329695292
+	title - 深证成指
+	Customize - 34
+INFO - 2019-05-15 17:42:45 - tested LSTM.
+	title - 深证成指
+	Theil - 0.0103613918409108
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	DA - 0.5080645161290323
+	affect_days - 5
+	R - 5.852895227482479
+	MSELoss - 30564.051329695292
+	plot_name - ['fig1']
+	filename - 深证成指2011-2015_test.csv
+	Customize - 34
+	L1Loss - 112.44932151278962
+	column - ClPr
+	MAPE - 0.007246992309853425

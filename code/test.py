@@ -45,6 +45,7 @@ def test(test_filename, time_now, title, **kwargs):
     plt1.plot(data['index'], data['real_data'][affect:], 'real data')
     plt1.plot(data['index'], predict, 'predict data')
     plt1.title(title, zh=True)
+    plt1.xylabel('Datetime', 'index')
     plt1.save(plot_name[0])
     # Plot.show()
     Plot.cla()

@@ -1,4 +1,5 @@
 import numpy as np
+import os
 
 
 class Evaluate:
@@ -16,8 +17,11 @@ class Evaluate:
         else:
             self.y_predict = y_predict
         self.check()
-        np.save('predict_data/{}_true_data.npy'.format(title), np.array(self.y_true))
-        np.save('predict_data/{}_predict_data.npy'.format(title), np.array(self.y_predict))
+        if not os.path.exists('predict_data'):
+            os.mkdir('predict_data')
+        else:
+            np.save('predict_data/{}_true_data.npy'.format(title), np.array(self.y_true))
+            np.save('predict_data/{}_predict_data.npy'.format(title), np.array(self.y_predict))
 
     def check(self):
         if len(self.y_true) != len(self.y_predict):
