@@ -4710,3 +4710,22 @@ INFO - 2019-05-15 19:15:44 - tested LSTM.
 	title - 浦发银行
 	DA - 0.5289256198347108
 	R - 7.574510509116548
+INFO - 2019-05-15 19:18:01 - tested LSTM.
+	title - 武钢股份
+	column - ClPr
+	plot_name - ['fig1']
+	R - 6.326260296300187
+	Customize - 45
+	Theil - 0.013313513440605464
+	MSELoss - 0.004476237408963791
+	filename - 武钢股份2011-2014_test.csv
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	L1Loss - 0.045243542845009664
+	DA - 0.49193548387096775
+	MAPE - 0.0037558211107387228
+	affect_days - 5
