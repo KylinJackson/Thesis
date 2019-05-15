@@ -5582,3 +5582,69 @@ INFO - 2019-05-15 19:33:24 - tested LSTM.
 	MSELoss - 1.9864557678502843
 	affect_days - 5
 	Customize - 35
+INFO - 2019-05-15 19:39:52 - trained LSTM for 1000 times.
+	filename - 中信证券2011-2014_train.csv
+	column - ClPr
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	mean - 12.04115976331361
+	save_name - LSTM.pt
+	learning_rate - 0.0001
+	affect_days - 5
+	std - 1.1699870697588017
+INFO - 2019-05-15 19:37:13 - tested LSTM.
+	filename - 中信证券2011-2014_test.csv
+	MSELoss - 2.4786978820268453
+	column - ClPr
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	R - 5.062206456493526
+	title - 中信证券
+	Customize - 40
+	MAPE - 0.027021501210194334
+	Theil - 0.04871125076098158
+	plot_name - ['fig1']
+	DA - 0.5037593984962406
+	L1Loss - 0.7312506822252575
+	affect_days - 5
+INFO - 2019-05-15 19:43:57 - trained LSTM for 1000 times.
+	column - ClPr
+	mean - 9.069709090909091
+	save_name - LSTM.pt
+	std - 2.7224485985193323
+	filename - 上工申贝2011-2014_train.csv
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	affect_days - 5
+	learning_rate - 0.0001
+INFO - 2019-05-15 19:41:29 - tested LSTM.
+	column - ClPr
+	plot_name - ['fig1']
+	L1Loss - 0.23934396568460042
+	Theil - 0.012998288274257894
+	title - 上工申贝
+	MAPE - -0.002658310416004264
+	MSELoss - 0.09867116399101414
+	filename - 上工申贝2011-2014_test.csv
+	R - 6.990359714830814
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	Customize - 9
+	DA - 0.4603174603174603
+	affect_days - 5
