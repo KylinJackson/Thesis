@@ -1,0 +1,7 @@
+time = time.struct_time(tm_year=2019, tm_mon=5, tm_mday=15, tm_hour=19, tm_min=48, tm_sec=17, tm_wday=2, tm_yday=135, tm_isdst=0)
+MSELoss = 0.04442500875914402
+DA = 0.5241935483870968
+Theil_U = 0.014112163553060999
+L1Loss = 0.15963386301637336
+MAPE = 0.0006106769146512773
+R = 8.623064379367756

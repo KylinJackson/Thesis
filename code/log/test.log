@@ -4824,3 +4824,22 @@ INFO - 2019-05-15 19:41:29 - tested LSTM.
 	Customize - 9
 	DA - 0.4603174603174603
 	affect_days - 5
+INFO - 2019-05-15 19:48:17 - tested LSTM.
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	MAPE - 0.0006106769146512773
+	plot_name - ['fig1']
+	MSELoss - 0.04442500875914402
+	affect_days - 5
+	Customize - 26
+	L1Loss - 0.15963386301637336
+	R - 8.623064379367756
+	title - 南京化纤
+	column - ClPr
+	filename - 南京化纤2011-2014_test.csv
+	Theil - 0.014112163553060999
+	DA - 0.5241935483870968
