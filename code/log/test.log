@@ -4729,3 +4729,22 @@ INFO - 2019-05-15 19:18:01 - tested LSTM.
 	DA - 0.49193548387096775
 	MAPE - 0.0037558211107387228
 	affect_days - 5
+INFO - 2019-05-15 19:24:29 - tested LSTM.
+	Customize - 35
+	DA - 0.5234375
+	title - 东风汽车
+	Theil - 0.023597881388107755
+	plot_name - ['fig1']
+	MSELoss - 0.05270986054455788
+	filename - 东风汽车2011-2014_test.csv
+	L1Loss - 0.1819429237478939
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	affect_days - 5
+	column - ClPr
+	R - 8.956029355295694
+	MAPE - -0.0199583434538321
