@@ -3,7 +3,7 @@ import time
 import test
 import train
 
-TRAIN = False
+TRAIN = True
 TEST = True
 
 # 超参数设置

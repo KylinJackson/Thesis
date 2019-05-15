@@ -5384,3 +5384,69 @@ INFO - 2019-05-15 17:31:51 - tested LSTM.
 	MSELoss - 30564.051329695292
 	title - 深证成指
 	Customize - 34
+INFO - 2019-05-15 17:50:35 - trained LSTM for 1000 times.
+	std - 382.2732318512321
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	save_name - LSTM.pt
+	filename - 上证指数2009-2014_train.csv
+	affect_days - 5
+	mean - 2488.748118959108
+	learning_rate - 0.0001
+	column - ClPr
+INFO - 2019-05-15 17:46:31 - tested LSTM.
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	filename - 上证指数2009-2014_test.csv
+	DA - 0.5230769230769231
+	affect_days - 5
+	L1Loss - 24.83768685726946
+	Theil - 0.007783272457727947
+	MSELoss - 1411.5684951351911
+	Customize - 53
+	title - 上证指数
+	column - ClPr
+	R - 6.301767116814812
+	plot_name - ['fig1']
+	MAPE - 0.005296525034845845
+INFO - 2019-05-15 19:13:11 - trained LSTM for 1000 times.
+	learning_rate - 0.0001
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	std - 2.6958831671606847
+	save_name - LSTM.pt
+	mean - 10.522718894009216
+	affect_days - 5
+	filename - 浦发银行2011-2015_train.csv
+	column - ClPr
+INFO - 2019-05-15 19:09:54 - tested LSTM.
+	MSELoss - 0.2576180216953242
+	Theil - 0.015138288203323707
+	filename - 浦发银行2011-2015_test.csv
+	MAPE - -0.004633109888071135
+	DA - 0.5289256198347108
+	plot_name - ['fig1']
+	title - 浦发银行
+	R - 7.574510509116548
+	Customize - 20
+	affect_days - 5
+	network - LSTM(
+	  (lstm): LSTM(5, 64, batch_first=True)
+	  (out): Sequential(
+	    (0): Linear(in_features=64, out_features=1, bias=True)
+	  )
+	)
+	L1Loss - 0.3594640676541294
+	column - ClPr

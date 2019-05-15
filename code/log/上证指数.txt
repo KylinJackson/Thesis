@@ -1,7 +1,7 @@
-time = time.struct_time(tm_year=2019, tm_mon=5, tm_mday=15, tm_hour=17, tm_min=22, tm_sec=12, tm_wday=2, tm_yday=135, tm_isdst=0)
-MSELoss = 1331.4740564191775
-DA = 0.5307692307692308
-Theil_U = 0.0075545459069876
-L1Loss = 24.113553141092687
-MAPE = 0.004103017341547706
-R = 6.302657184563174
+time = time.struct_time(tm_year=2019, tm_mon=5, tm_mday=15, tm_hour=17, tm_min=46, tm_sec=31, tm_wday=2, tm_yday=135, tm_isdst=0)
+MSELoss = 1411.5684951351911
+DA = 0.5230769230769231
+Theil_U = 0.007783272457727947
+L1Loss = 24.83768685726946
+MAPE = 0.005296525034845845
+R = 6.301767116814812
