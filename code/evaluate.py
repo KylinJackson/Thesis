@@ -35,7 +35,7 @@ class Evaluate:
         numerator /= len(self.y_true)
         return numerator
 
-    def Theil_U(self, ):
+    def Theil_U(self):
         self.check()
         numerator = self.MSELoss() ** (1 / 2)
         num1 = 0.
@@ -90,7 +90,6 @@ class Evaluate:
         return numerator / denominator
 
     def MAPE(self):
-        self.check()
         self.check()
         numerator = 0.
         for i in range(len(self.y_true)):
