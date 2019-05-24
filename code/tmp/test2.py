@@ -17,7 +17,7 @@ def standardize(stock_name):
     return true_std, predict_std
 
 
-stock = '上工申贝'
+stock = '南京化纤'
 
 
 def r(y1, y2):
@@ -27,9 +27,13 @@ def r(y1, y2):
     mean_predict = y_predict_np.mean()
     numerator = 0.
     denominator = 0.
+    d1 = 0.
+    d2 = 0.
     for i in range(len(y1)):
         numerator += (y1[i] - mean_true) * (y2[i] - mean_predict)
-        denominator += (y1[i] - mean_true) ** 2 * (y2[i] - mean_predict) ** 2
+        d1 += (y1[i] - mean_true) ** 2
+        d2 += (y2[i] - mean_predict) ** 2
+        denominator = d1 * d2
     denominator = denominator ** (1 / 2)
     return numerator / denominator
 
